@@ -30,4 +30,4 @@ COPY . /app
 EXPOSE 8000
 ENV LISTEN_PORT=8060
 
-CMD ["uvicorn", "app:app", "--host=o.e.e.e", "--port=8000", "--workers=s"]
+CMD ["uvicorn", "app:app", "--host=o.e.e.e", "--port=8000", "--workers=4"]
