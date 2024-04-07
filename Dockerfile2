@@ -28,6 +28,6 @@ RUN pip install -r requirements.txt
 
 COPY . /app
 EXPOSE 8000
-ENV LISTEN_PORT=8060
+ENV LISTEN_PORT=8000
 
-CMD ["uvicorn", "app:app", "--host=o.e.e.e", "--port=8000", "--workers=4"]
+CMD ["uvicorn", "app:app", "--host=0.0.0.0", "--port=8000", "--workers=4"]
